@@ -61,6 +61,13 @@
 			>
 				Login
 			</button>
+			<button
+				on:click={() => {goto("/profile/linustorvalds")}}
+				class="bg-[#1A1D21] px-4 py-2 rounded-[10px] text-white text-sm"
+			>
+				Örnek Profil Sayfası
+			</button>
+
 			<LoginModal bind:showModal />
 		{/if}
 	</div>
