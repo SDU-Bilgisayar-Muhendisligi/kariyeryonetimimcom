@@ -20,15 +20,15 @@
 		},
 		{
 			publisher: {
-				username: 'github',
-				profilePicture: 'https://avatars.githubusercontent.com/u/9919?s=200&v=4',
-				name: 'GitHub',
+				username: 'tesla',
+				profilePicture: 'https://media.discordapp.net/attachments/1080426756198125582/1108840522543546529/indir.png',
+				name: 'Tesla',
 				job: 'Where the world builds software'
 			},
 			content: {
 				description:
-					'GitHub is where over 65 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.',
-				images: ['https://github.githubassets.com/images/modules/open_graph/github-octocat.png']
+					'Tesla Energy is looking for a motivated Firmware Integration Engineer to bring the next generation of home and commercial charging products to the market. The successful applicant will join a team of knowledgeable engineers and have an opportunity to solve challenging problems in the energy products space. Expert firmware integration to the system and production line is critical for the delivery of high-quality Tesla products to its customers. The engineer will collaborate closely with hardware, manufacturing, and service engineering to design firmware and automation solutions for an awesome customer and production experience. The candidate will show outstanding technical and organizational skills and be passionate about bringing sustainable energy to the world. High level collaboration and communication skills are highly sought after. The position duties require travel to Tesla factories.',
+				images: ['https://media.discordapp.net/attachments/1080426756198125582/1108841220358295734/tesla-logo-free-download-free-vector.jpg?width=1440&height=576']
 			},
 			likes: 1000000000,
 			comments: 10000
@@ -47,6 +47,22 @@
 			},
 			likes: 1200000000,
 			comments: 10000
+		},
+		
+		{
+			publisher: {
+				username: 'tesla',
+				profilePicture: 'https://media.discordapp.net/attachments/1080426756198125582/1108840522543546529/indir.png',
+				name: 'Tesla',
+				job: 'Where the world builds software'
+			},
+			content: {
+				description:
+					'Tesla Energy is looking for a motivated Firmware Integration Engineer to bring the next generation of home and commercial charging products to the market. The successful applicant will join a team of knowledgeable engineers and have an opportunity to solve challenging problems in the energy products space. Expert firmware integration to the system and production line is critical for the delivery of high-quality Tesla products to its customers. The engineer will collaborate closely with hardware, manufacturing, and service engineering to design firmware and automation solutions for an awesome customer and production experience. The candidate will show outstanding technical and organizational skills and be passionate about bringing sustainable energy to the world. High level collaboration and communication skills are highly sought after. The position duties require travel to Tesla factories.',
+				images: ['https://media.discordapp.net/attachments/1080426756198125582/1108841220358295734/tesla-logo-free-download-free-vector.jpg?width=1440&height=576']
+			},
+			likes: 1000000000,
+			comments: 10000
 		}
 	];
 
@@ -58,8 +74,8 @@
 			job: 'Where the world builds software'
 		},
 		{
-			username: 'github',
-			profilePicture: 'https://avatars.githubusercontent.com/u/9919?s=200&v=4',
+			username: 'tesla',
+			profilePicture: 'https://media.discordapp.net/attachments/1080426756198125582/1108840522543546529/indir.png',
 			name: 'GitHub',
 			job: 'Where the world builds software'
 		},
