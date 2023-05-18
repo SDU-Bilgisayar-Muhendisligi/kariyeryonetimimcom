@@ -1,9 +1,12 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import Profile from '@/lib/navbar/Profile.svelte';
 	import items from '@/lib/navbar/items.js';
 	let navitems = items;
 	import Icon from '@iconify/svelte';
+
+
 	let loginedUser = false;
 
 	onMount(() => {
@@ -42,7 +45,9 @@
 		</div>
 
 		{#if loginedUser}
-			<div></div>
+			<div class="p-0 m-0 flex items-center justify-center space-x-1">
+				<Profile />
+			</div>
 		{:else}
 			<button
 				class="bg-[#1A1D21] px-4 py-2 rounded-[10px] text-white text-sm"
