@@ -2,10 +2,15 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import Profile from '@/lib/navbar/Profile.svelte';
+	import Notifications from '@/lib/navbar/Notifications.svelte';
 	import items from '@/lib/navbar/items.js';
+	import LoginModal from '@/lib/navbar/LoginModal.svelte';
 	let navitems = items;
 	import Icon from '@iconify/svelte';
 
+	import { userStore } from '@/stores';
+
+	let showModal = false;
 
 	let loginedUser = false;
 
@@ -46,14 +51,17 @@
 
 		{#if loginedUser}
 			<div class="p-0 m-0 flex items-center justify-center space-x-1">
+				<Notifications />
 				<Profile />
 			</div>
 		{:else}
 			<button
+				on:click={() => (showModal = true)}
 				class="bg-[#1A1D21] px-4 py-2 rounded-[10px] text-white text-sm"
 			>
 				Login
 			</button>
+			<LoginModal bind:showModal />
 		{/if}
 	</div>
 </nav>
