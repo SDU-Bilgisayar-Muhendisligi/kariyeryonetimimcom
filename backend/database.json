@@ -1,0 +1,166 @@
+{
+    "users": {
+        "bakibayram": {
+            "username": "bakibayram",
+            "auth": {
+                "email": "bakibayram@hotmail.com",
+                "password": "baki123"
+            },
+            "biography": "",
+            "profilePicture": "def.avif",
+            "contents": {},
+            "groups": {},
+            "followers": [
+                "kagankoyuncu"
+            ],
+            "following": [],
+            "notifications": [
+                {
+                    "type": "follow",
+                    "from": "kagankoyuncu",
+                    "content": "started following you",
+                    "date": 1687282945779
+                }
+            ]
+        },
+        "haydarozluk": {
+            "username": "haydarozluk",
+            "auth": {
+                "email": "haydarozluk@gmail.com",
+                "password": "haydar123"
+            },
+            "biography": "",
+            "profilePicture": "def.avif",
+            "contents": {},
+            "groups": {},
+            "followers": [
+                "kagankoyuncu"
+            ],
+            "following": [],
+            "notifications": [
+                {
+                    "type": "follow",
+                    "from": "kagankoyuncu",
+                    "content": "started following you",
+                    "date": 1687282951610
+                }
+            ]
+        },
+        "abdullahulusoy": {
+            "username": "abdullahulusoy",
+            "auth": {
+                "email": "abdullahulusoy@gmail.com",
+                "password": "abdullah123"
+            },
+            "biography": "",
+            "profilePicture": "def.avif",
+            "contents": {},
+            "groups": {},
+            "followers": [
+                "kagankoyuncu"
+            ],
+            "following": [],
+            "notifications": [
+                {
+                    "type": "follow",
+                    "from": "kagankoyuncu",
+                    "content": "started following you",
+                    "date": 1687282959345
+                }
+            ]
+        },
+        "kagankoyuncu": {
+            "username": "kagankoyuncu",
+            "auth": {
+                "email": "undefined",
+                "password": "kagan123"
+            },
+            "biography": "",
+            "profilePicture": "989034496878.webp",
+            "contents": {},
+            "groups": {
+                "YazilimMühendisligi": {
+                    "username": "YazilimMühendisligi",
+                    "profilePicture": "737470427004.png",
+                    "role": 1
+                }
+            },
+            "followers": [],
+            "following": [
+                "bakibayram",
+                "haydarozluk",
+                "abdullahulusoy"
+            ],
+            "companies": {
+                "GitHub": {
+                    "username": "GitHub",
+                    "profilePicture": "477634007145.webp",
+                    "role": 1
+                }
+            }
+        }
+    },
+    "groups": {
+        "YazilimMühendisligi": {
+            "username": "YazilimMühendisligi",
+            "profilePicture": "737470427004.png",
+            "contents": {
+                "63e68e9ecb85fe1e3aa2074f297e73ed": {
+                    "description": "Game CI",
+                    "image": "939959335044.png",
+                    "author": "kagankoyuncu",
+                    "userProfilePicture": "def.avif"
+                }
+            },
+            "users": [
+                {
+                    "username": "kagankoyuncu",
+                    "profilePicture": "def.avif",
+                    "role": 1
+                }
+            ]
+        }
+    },
+    "companies": {
+        "GitHub": {
+            "username": "GitHub",
+            "profilePicture": "477634007145.webp",
+            "users": [
+                {
+                    "username": "kagankoyuncu",
+                    "profilePicture": "def.avif",
+                    "role": 1
+                }
+            ],
+            "contents": {
+                "3dd12d76e9954f3f0c0074c7e2b5c5a5": {
+                    "description": "Game CI",
+                    "image": "779455555538.png",
+                    "author": "kagankoyuncu",
+                    "userProfilePicture": "def.avif"
+                }
+            }
+        }
+    },
+    "messages": {
+        "kagankoyuncu": {
+            "haydarozluk": []
+        },
+        "haydarozluk": {
+            "kagankoyuncu": []
+        }
+    },
+    "jobadvertisements": {
+        "kagankoyuncu": {
+            "advertisement": {
+                "68f2dce1b3ec5d46ac50b510c6ab54fb": {
+                    "description": "Game CI projemiz için Ekip topluyoruz!",
+                    "image": "823384508187.png",
+                    "author": "kagankoyuncu",
+                    "userProfilePicture": "989034496878.webp",
+                    "postid": "68f2dce1b3ec5d46ac50b510c6ab54fb"
+                }
+            }
+        }
+    }
+}
