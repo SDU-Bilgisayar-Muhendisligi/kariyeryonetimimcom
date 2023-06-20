@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 0.4rem;
+	border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+	background-color: #131619;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #30363d;
+}
+
+@layer base {
+	body {
+		@apply bg-gitcol-900;
+	}
+
+	h1 {
+		@apply text-4xl text-white;
+	}
+
+	h2 {
+		@apply text-3xl text-white;
+	}
+
+	h3 {
+		@apply text-2xl text-white;
+	}
+
+	h4 {
+		@apply text-xl text-white;
+	}
+
+	h5 {
+		@apply text-lg text-white;
+	}
+
+	h6 {
+		@apply text-base text-white;
+	}
+
+	p {
+		@apply text-base text-white;
+	}
+
+	a {
+		@apply text-base text-white;
+	}
+
+	.card {
+		@apply bg-gitcol-800 rounded-lg shadow-lg p-4;
+	}
+
+	.navbarHead {
+		@apply flex flex-col items-center w-full bg-gitcol-800 border-b-[0.5px] border-gitcol-border h-16 justify-center;
+	}
+}
