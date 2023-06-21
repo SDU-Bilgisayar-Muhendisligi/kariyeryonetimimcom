@@ -4,10 +4,57 @@
 	import { env } from '$env/dynamic/public';
 	import Cookies from 'js-cookie';
 	export let data;
+
+	let searchQuery = '';
 </script>
 
-<div class="bg-gitcol-800 rounded-lg border border-gitcol-600 rounded-t-lg py-5 px-5 mb-5">
+<div class="bg-gitcol-800 rounded-lg border border-gitcol-600 rounded-t-lg py-5 px-5 mb-5 gap-3 flex flex-col">
 	<h3>Senin İşine Yarayabilecek İlanlar</h3>
+	<div class="relative">
+		<input
+			type="text"
+			name="searchBar"
+			id="password"
+			placeholder="linustorvalds"
+			class="border border-gitcol-600 text-sm rounded-lg focus:ring-gitcol-600 transition-all outline-none focus:ring-1 focus:border-gitcol-600 w-full p-2.5 bg-[#1A1D21] placeholder-gray-400 text-white hidden lg:block"
+			required=""
+			bind:value={searchQuery}
+		/>
+		{#if searchQuery.length > 1}
+			<div
+				class="absolute bg-[#1A1D21] border border-gitcol-600 rounded-md p-1 mt-1 w-full flex flex-col z-[999]"
+			>
+				{#each data.ads.filter((x) => searchQuery !== '' && x.description
+							.toLowerCase()
+							.includes(searchQuery.toLowerCase())) as item}
+					<button
+						class="text-gitcol-100 text-sm p-2 hover:bg-gitcol-900 rounded-md text-left"
+						on:click={async () => {
+							searchQuery = '';
+							const res = await fetch(`${env.PUBLIC_API_URL}/message/create`, {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json',
+									Authorization: `${Cookies.get('token')}`
+								},
+								body: JSON.stringify({
+									username: item.author
+								})
+							});
+							if (res.status === 200) {
+								alert('Mesaj gönderildi');
+								window.location.href = `/message/${item.author}`;
+							} else {
+								alert('Bir hata oluştu');
+								const data = await res.json();
+								alert(data.error);
+							}
+						}}>{item.description}</button
+					>
+				{/each}
+			</div>
+		{/if}
+	</div>
 </div>
 
 <main class="flex space-x-5">
