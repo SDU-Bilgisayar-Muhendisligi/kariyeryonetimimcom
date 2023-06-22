@@ -340,6 +340,42 @@ export default function User(router: FastifyInstance, done: Function, db) {
             success: true,
         });
     });
+    router.get('/notification/:username', async (req, res) => {
+        let token = req.headers.authorization;
+        let { username } = req.params as Record<string, any>;
 
+        if (!token) {
+            return res.status(400).send({
+                error: 'Invalid authorization token',
+            });
+        }
+
+        let user = await verify(token);
+
+        if (!user) {
+            return res.status(400).send({
+                error: 'Invalid authorization token',
+            });
+        }
+
+        if (!username) {
+            return res.status(400).send({
+                error: 'Invalid body',
+            });
+        }
+
+        let notifications = db.get(`users.${username}.notifications`);
+
+        if (!notifications) {
+            return res.status(400).send({
+                notifications: [],
+            });
+        }
+
+        return res.status(200).send({
+            success: true,
+            notifications: notifications,
+        });
+    });
     done();
 }

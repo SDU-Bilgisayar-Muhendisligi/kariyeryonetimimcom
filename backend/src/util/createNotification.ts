@@ -4,6 +4,7 @@ export default function createNotification(db, username, notification) {
     notifications.push({
         type: notification.type,
         from: notification.from,
+        profilePicture: 'def.avif',
         content: notification.content,
         date: Date.now(),
     });

@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/jobadverts/my/+page.svelte";

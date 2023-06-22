@@ -1,28 +1,5 @@
 {
     "users": {
-        "bakibayram": {
-            "username": "bakibayram",
-            "auth": {
-                "email": "bakibayram@hotmail.com",
-                "password": "baki123"
-            },
-            "biography": "",
-            "profilePicture": "def.avif",
-            "contents": {},
-            "groups": {},
-            "followers": [
-                "kagankoyuncu"
-            ],
-            "following": [],
-            "notifications": [
-                {
-                    "type": "follow",
-                    "from": "kagankoyuncu",
-                    "content": "started following you",
-                    "date": 1687282945779
-                }
-            ]
-        },
         "haydarozluk": {
             "username": "haydarozluk",
             "auth": {
@@ -34,17 +11,11 @@
             "contents": {},
             "groups": {},
             "followers": [
-                "kagankoyuncu"
+                "kagankoyuncu",
+                "bakibayram"
             ],
             "following": [],
-            "notifications": [
-                {
-                    "type": "follow",
-                    "from": "kagankoyuncu",
-                    "content": "started following you",
-                    "date": 1687282951610
-                }
-            ]
+            "notifications": []
         },
         "abdullahulusoy": {
             "username": "abdullahulusoy",
@@ -60,23 +31,90 @@
                 "kagankoyuncu"
             ],
             "following": [],
+            "notifications": []
+        },
+        "deneme1": {
+            "username": "deneme1",
+            "auth": {
+                "email": "dasdas@gmail.com",
+                "password": "deneme1"
+            },
+            "biography": "",
+            "profilePicture": "def.avif",
+            "contents": {},
+            "groups": {},
+            "followers": [],
+            "following": [
+                "bakibayram"
+            ]
+        },
+        "bakibayram": {
+            "username": "bakibayram",
+            "auth": {
+                "email": "bakibayram@hotmail.com",
+                "password": "baki123"
+            },
+            "biography": "bilgisayar mühendisi",
+            "profilePicture": "937553454236.jpeg",
+            "contents": {},
+            "groups": {
+                "YazilimMühendisligi": {
+                    "username": "bakibayram",
+                    "profilePicture": "def.avif",
+                    "role": "1"
+                }
+            },
+            "followers": [
+                "deneme1",
+                "kagankoyuncu"
+            ],
+            "following": [
+                "haydarozluk",
+                "kagankoyuncu"
+            ],
             "notifications": [
                 {
                     "type": "follow",
                     "from": "kagankoyuncu",
+                    "profilePicture": "def.avif",
                     "content": "started following you",
-                    "date": 1687282959345
+                    "date": 1687451087860
                 }
-            ]
+            ],
+            "companies": {
+                "Tesla Electric Cars": {
+                    "username": "Tesla Electric Cars",
+                    "profilePicture": "432457981103.png",
+                    "role": 1
+                },
+                "Microsoft": {
+                    "username": "Microsoft",
+                    "profilePicture": "604545834408.jpeg",
+                    "role": 1
+                }
+            }
+        },
+        "deneme2": {
+            "username": "deneme2",
+            "auth": {
+                "email": "deneme2@hotmail.com",
+                "password": "123456"
+            },
+            "biography": "",
+            "profilePicture": "def.avif",
+            "contents": {},
+            "groups": {},
+            "followers": [],
+            "following": []
         },
         "kagankoyuncu": {
             "username": "kagankoyuncu",
             "auth": {
-                "email": "undefined",
+                "email": "kagankoyuncu@hotmail.com",
                 "password": "kagan123"
             },
-            "biography": "",
-            "profilePicture": "989034496878.webp",
+            "biography": "migros kasiyer",
+            "profilePicture": "67599343838.png",
             "contents": {},
             "groups": {
                 "YazilimMühendisligi": {
@@ -85,11 +123,13 @@
                     "role": 1
                 }
             },
-            "followers": [],
+            "followers": [
+                "bakibayram"
+            ],
             "following": [
-                "bakibayram",
                 "haydarozluk",
-                "abdullahulusoy"
+                "abdullahulusoy",
+                "bakibayram"
             ],
             "companies": {
                 "GitHub": {
@@ -97,7 +137,8 @@
                     "profilePicture": "477634007145.webp",
                     "role": 1
                 }
-            }
+            },
+            "notifications": []
         }
     },
     "groups": {
@@ -115,6 +156,11 @@
             "users": [
                 {
                     "username": "kagankoyuncu",
+                    "profilePicture": "def.avif",
+                    "role": 1
+                },
+                {
+                    "username": "bakibayram",
                     "profilePicture": "def.avif",
                     "role": 1
                 }
@@ -140,14 +186,51 @@
                     "userProfilePicture": "def.avif"
                 }
             }
+        },
+        "Tesla Electric Cars": {
+            "username": "Tesla Electric Cars",
+            "profilePicture": "432457981103.png",
+            "users": [
+                {
+                    "username": "bakibayram",
+                    "profilePicture": "def.avif",
+                    "role": 1
+                }
+            ],
+            "contents": {
+                "b0669185ba7b331316c92d2d806ef47f": {
+                    "description": "Tesla’nın İstanbul Servis Merkezi için yetenekli Otomobil Teknisyenleri arıyoruz. Tesla’da mekanikerlerimiz, servis operasyonunun omurgasını oluşturur ve Dünya’nın sürdürülebilir enerjiye geçişini hızlandırma misyonumuzu desteklerler. Bugüne kadar yapılmış en yenilikçi otomobili ortaya çıkardık ve Servis Teknisyeni olarak müşterilerimize aynı seviyede hizmeti sağlamamıza yardım etmeni bekliyoruz.  \r\n",
+                    "image": "404018709020.jpeg",
+                    "author": "bakibayram",
+                    "userProfilePicture": "937553454236.jpeg"
+                }
+            }
+        },
+        "Microsoft": {
+            "username": "Microsoft",
+            "profilePicture": "604545834408.jpeg",
+            "users": [
+                {
+                    "username": "bakibayram",
+                    "profilePicture": "937553454236.jpeg",
+                    "role": 1
+                }
+            ],
+            "contents": {}
         }
     },
     "messages": {
         "kagankoyuncu": {
-            "haydarozluk": []
+            "haydarozluk": [],
+            "bakibayram": [],
+            "kagankoyuncu": []
         },
         "haydarozluk": {
             "kagankoyuncu": []
+        },
+        "bakibayram": {
+            "kagankoyuncu": [],
+            "bakibayram": []
         }
     },
     "jobadvertisements": {
@@ -159,6 +242,17 @@
                     "author": "kagankoyuncu",
                     "userProfilePicture": "989034496878.webp",
                     "postid": "68f2dce1b3ec5d46ac50b510c6ab54fb"
+                }
+            }
+        },
+        "bakibayram": {
+            "advertisement": {
+                "ff6e25b91b3d485abcf31049b716df34": {
+                    "description": "Futbolcu aranıyor ",
+                    "image": "70225052520.jpeg",
+                    "author": "bakibayram",
+                    "userProfilePicture": "538584085467.jpeg",
+                    "postid": "ff6e25b91b3d485abcf31049b716df34"
                 }
             }
         }
